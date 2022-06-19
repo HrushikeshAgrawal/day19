@@ -1,6 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
-const Nav = ({cart}) => {
+import { CartContext } from '../context/CartContext'
+
+const Nav = () => {
+
+  const [cart,setCart] = useContext(CartContext);
+
   return (
     <div className='navbar' >
         <h1>Shopping Website</h1>

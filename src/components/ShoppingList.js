@@ -1,7 +1,11 @@
-import React,{useState} from 'react'
+import React,{useState, useContext} from 'react'
 import ShoppingItem from './ShoppingItem';
 
-const ShoppingList = ({cart}) => {
+import { CartContext } from '../context/CartContext';
+
+const ShoppingList = () => {
+
+  const [cart,setCart] = useContext(CartContext);
 
   return (
       <>
